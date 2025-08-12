@@ -23,6 +23,7 @@ jobs:
         with:
           executable-name: hello-rust
           target: ${{ matrix.platform.target }}
+          changes-file: ""
     strategy:
       matrix:
         platform:
