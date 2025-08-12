@@ -20,6 +20,7 @@ jobs:
           target: ${{ matrix.platform.target }}
           args: --bins --release --locked
           strip: true
+          cross-version: 107433fa9d71d7eb506cd5bf5467bab89edb7a52
       - name: Release
         uses: houseabsolute/actions-rust-release@v0
         with:
